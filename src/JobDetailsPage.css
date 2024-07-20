@@ -1,0 +1,106 @@
+.job-details-container {
+    padding: 20px;
+  }
+  
+  .job-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .job-title {
+    color: #007bff; /* Blue color for the job title */
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+  }
+  
+  .status-indicator.active {
+    background-color: #28a745; /* Green color for active status */
+    border-color: #28a745;
+  }
+  
+  .data-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px; /* Increased gap between elements */
+  }
+  
+  .data-block {
+    background-color: #f0f0f0;
+    padding: 20px 40px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+    width: 250px; /* Increased width */
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+    margin: 0 40px; /* Increased margin */
+    position: relative;
+  }
+  
+  .arrow-text {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .arrow-icon {
+    font-size: 40px; /* Increased size of the arrow */
+    animation: arrow-animation 1s infinite alternate;
+  }
+  
+  @keyframes arrow-animation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(15px);
+    }
+  }
+  
+  .job-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between cards */
+  }
+  
+  .job-detail {
+    flex: 0 0 50%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .job-detail strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .impact-card {
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .impact-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #b30000;
+  }
+  
